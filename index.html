@@ -4,15 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Portofolio Wandra — Baihaqi Leviandra Hermawan. Coder & Vibe Coder server Minecraft dan website.">
-<title>Wandra · Galaxy Portfolio</title>
+<title>Wandra Portofolio</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%8C%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Space+Grotesk:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-/* ═══════════════════════════════════════════════
-   RESET & BASE
-═══════════════════════════════════════════════ */
+
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
@@ -29,9 +27,7 @@ body{
 ::-webkit-scrollbar-thumb{background:linear-gradient(180deg,#8b5cf6,#6d28d9);border-radius:10px}
 ::-webkit-scrollbar-thumb:hover{background:linear-gradient(180deg,#a78bfa,#7c3aed)}
 
-/* ═══════════════════════════════════════════════
-   GALAXY BACKGROUND LAYERS
-═══════════════════════════════════════════════ */
+
 .bg-wrap{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none}
 #starCanvas{position:absolute;inset:0;width:100%;height:100%}
 .nebula{
@@ -46,7 +42,7 @@ body{
   50%{transform:translate(4vw,3vh) scale(1.08)}
   100%{transform:translate(-3vw,-2vh) scale(.96)}
 }
-/* subtle fixed star dust via CSS (behind canvas stars) */
+
 .star-dust{
   position:absolute;inset:0;
   background-image:
@@ -71,7 +67,7 @@ body{
   8%{opacity:1}
   100%{opacity:0;transform:rotate(-32deg) translateX(46vw)}
 }
-/* big rotating galaxy spiral behind hero title */
+
 .galaxy-spiral{
   position:absolute;top:50%;left:50%;width:140vmax;height:140vmax;
   transform:translate(-50%,-50%);
@@ -90,9 +86,7 @@ body{
 }
 @keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}
 
-/* ═══════════════════════════════════════════════
-   NAVIGATION
-═══════════════════════════════════════════════ */
+
 header{
   position:fixed;top:0;left:0;right:0;z-index:100;
   padding:18px clamp(20px,5vw,60px);
@@ -143,9 +137,6 @@ nav a:hover::after,nav a.active::after{width:100%}
 .burger.open span:nth-child(2){opacity:0}
 .burger.open span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
 
-/* ═══════════════════════════════════════════════
-   SHARED SECTION STYLES
-═══════════════════════════════════════════════ */
 main{position:relative;z-index:1}
 section{padding:clamp(80px,10vw,130px) clamp(20px,6vw,80px);position:relative}
 .section-tag{
@@ -583,11 +574,6 @@ a:focus-visible,button:focus-visible{outline:2px solid #a78bfa;outline-offset:3p
     <div class="type-line">
       <span class="typed" id="typed"></span><span class="caret"></span>
     </div>
-    <p class="lead">
-      Coder &amp; vibe coder server Minecraft dan website dari Indonesia.
-      Membangun dunia, menulis plugin, dan menghubungkan orang-orang di dalamnya —
-      satu baris kode dalam satu waktu.
-    </p>
     <div class="hero-cta">
       <a href="#portfolio" class="btn btn-primary">Jelajahi Portofolio
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -605,8 +591,8 @@ a:focus-visible,button:focus-visible{outline:2px solid #a78bfa;outline-offset:3p
   <!-- ══════════ ABOUT ══════════ -->
   <section id="about">
     <div class="center">
-      <div class="section-tag reveal">01 · Tentang Saya</div>
-      <h2 class="section-title reveal" data-delay="1">Seorang <span class="grad">Coder</span> di Antara Ratusan Bintang</h2>
+      <div class="section-tag reveal">01 · About Me</div>
+      <h2 class="section-title reveal" data-delay="1">Seorang <span class="grad">Coder</span>Yang sudah belajar dari kelas 7</h2>
     </div>
     <div class="about-grid" style="margin-top:56px">
       <div class="about-visual reveal">
@@ -638,7 +624,7 @@ a:focus-visible,button:focus-visible{outline:2px solid #a78bfa;outline-offset:3p
           Saya juga memiliki <span class="hl">koneksi yang sangat berguna</span> untuk membantu saya dalam mengerjakan sebuah server dan project.
         </p>
         <div class="about-badges">
-          <span class="badge">🚀 5+ Server Dikembangkan</span>
+          <span class="badge">🚀 5+ Server Developpment</span>
           <span class="badge">🧩 Plugin &amp; Mod Creator</span>
           <span class="badge">🌐 Web Developer</span>
           <span class="badge">🤝 Network Builder</span>
@@ -650,9 +636,9 @@ a:focus-visible,button:focus-visible{outline:2px solid #a78bfa;outline-offset:3p
   <!-- ══════════ PORTFOLIO ══════════ -->
   <section id="portfolio">
     <div class="center">
-      <div class="section-tag reveal">02 · Portofolio</div>
+      <div class="section-tag reveal">02 · My Project</div>
       <h2 class="section-title reveal" data-delay="1">Proyek-Proyek <span class="grad">Galaksi</span> Saya</h2>
-      <p class="section-sub reveal" data-delay="2">Setiap server adalah semesta tersendiri — dunia yang saya bangun, kodifikasi, dan hidupkan bersama komunitasnya.</p>
+      <p class="section-sub reveal" data-delay="2">Saya membangun server server ini bersama team komunitas saya bernama Neo Archana.</p>
     </div>
     <div class="portfolio-grid" style="margin-top:56px">
       <article class="project-card reveal">
@@ -663,7 +649,7 @@ a:focus-visible,button:focus-visible{outline:2px solid #a78bfa;outline-offset:3p
         </div>
         <h3>Cosmic of Rebels</h3>
         <div class="project-type">Minecraft RPG · Legend</div>
-        <p>Server RPG dengan sistem skill, quest epik, dan ekonomi yang dalam. Petualangan lintas dimensi untuk para pemberontak galaksi.</p>
+        <p>Server RPG dengan sistem skill Aurellium Dan Senjata Legend dengan konsep multiverse.</p>
         <div class="tags">
           <span class="tag purple">RPG</span><span class="tag">Quest System</span><span class="tag">Custom Skills</span>
         </div>
@@ -676,7 +662,7 @@ a:focus-visible,button:focus-visible{outline:2px solid #a78bfa;outline-offset:3p
         </div>
         <h3>Osaka Bloodlines</h3>
         <div class="project-type">Minecraft · Hardcore</div>
-        <p>Mode hardcore bertema klan dan garis darah. Bertahan hidup adalah satu-satunya aturan — satu kesalahan, selamanya hilang.</p>
+        <p>Server ini terinspirasi dari Server Brutal Hardcore Tapi Hanya Fokus Ke PvP Minecart dan PvP mace, dan untuk story nya saya terinspirasi dari film bernama The Truman Show</p>
         <div class="tags">
           <span class="tag purple">Hardcore</span><span class="tag">Clan System</span><span class="tag">Survival</span>
         </div>
@@ -689,9 +675,9 @@ a:focus-visible,button:focus-visible{outline:2px solid #a78bfa;outline-offset:3p
         </div>
         <h3>Cosmic Zone</h3>
         <div class="project-type">Minecraft · Hardcore PVP</div>
-        <p>Server Hardcore PVP bertenaga <b style="color:#e9d5ff">JJK</b> — plugin buatan saya sendiri, terinspirasi Jujutsu Kaisen. Kuasai cursed technique, taklukkan arena.</p>
+        <p>Ini adalah server PvP di Kombinasi Plugin<b style="color:#e9d5ff">Jujutsu Kaisen</b> — plugin buatan saya sendiri, terinspirasi Jujutsu Kaisen. menggunakan cursed technique, dan sistem Rpg.</p>
         <div class="tags">
-          <span class="tag purple">PVP</span><span class="tag">Plugin JJK (Buatan Sendiri)</span><span class="tag">Cursed Energy</span>
+          <span class="tag purple">PVP</span><span class="tag">Plugin JJK (Buatan Sendiri)</span><span class="tag">Cursed Technique</span>
         </div>
       </article>
       <article class="project-card reveal" data-delay="3">
@@ -702,7 +688,7 @@ a:focus-visible,button:focus-visible{outline:2px solid #a78bfa;outline-offset:3p
         </div>
         <h3>Web Projects</h3>
         <div class="project-type">Website · Front-End</div>
-        <p>Website landing, sistem web server Minecraft, dan berbagai eksperimen front-end interaktif. Ini portofolio yang sedang kamu lihat juga salah satunya.</p>
+        <p>Website landing, sistem web server Minecraft, dan web yang sedang anda liat juga asalah satu dari yang saya buat :v.</p>
         <div class="tags">
           <span class="tag purple">HTML/CSS/JS</span><span class="tag">UI Design</span><span class="tag">Interactive</span>
         </div>
@@ -724,7 +710,7 @@ a:focus-visible,button:focus-visible{outline:2px solid #a78bfa;outline-offset:3p
           <div class="skill-track"><div class="skill-fill" data-width="85"></div></div>
         </div>
         <div class="skill-item">
-          <div class="skill-label"><span>Server Minecraft — Setup, Konfigurasi &amp; Management</span><em>90%</em></div>
+          <div class="skill-label"><span>Server Minecraft — Setup, Configuration &amp; Management</span><em>90%</em></div>
           <div class="skill-track"><div class="skill-fill" data-width="90"></div></div>
         </div>
         <div class="skill-item">
@@ -757,7 +743,7 @@ a:focus-visible,button:focus-visible{outline:2px solid #a78bfa;outline-offset:3p
         </div>
         <div class="constellation-note">
           💡 <b style="color:#e9d5ff">Fun fact:</b> Plugin <b style="color:#e9d5ff">JJK</b> di Cosmic Zone saya tulis sendiri dari nol —
-          dari sistem cursed energy sampai mekanik pertarungannya. Kreativitas adalah bahan bakar terbaik di semesta mana pun.
+          dari sistem cursed energy, curse technique dan sistem poin yang saya bikin sendiri dengan ide sendiri.
         </div>
       </div>
     </div>
@@ -768,7 +754,7 @@ a:focus-visible,button:focus-visible{outline:2px solid #a78bfa;outline-offset:3p
     <div class="center">
       <div class="section-tag reveal">04 · Kontak</div>
       <h2 class="section-title reveal" data-delay="1">Mari Terhubung di <span class="grad">Semesta</span></h2>
-      <p class="section-sub reveal" data-delay="2">Punya ide server, butuh developer, atau sekadar ingin ngobrol soal Minecraft dan coding? Sinyal saya selalu aktif.</p>
+      <p class="section-sub reveal" data-delay="2">Punya ide server, butuh developer, atau sekadar ingin ngobrol soal Minecraft dan coding?Saya selalu respon kok :3.</p>
     </div>
     <div class="contact-cards">
       <a class="contact-card wa reveal" href="https://wa.me/6282299894234" target="_blank" rel="noopener noreferrer" aria-label="Chat WhatsApp">
@@ -797,7 +783,7 @@ a:focus-visible,button:focus-visible{outline:2px solid #a78bfa;outline-offset:3p
       </a>
     </div>
     <p class="contact-note center reveal" data-delay="3">
-      ⚡ Respon tercepat lewat WhatsApp atau Discord. Jangan sungkan — semua pertanyaan tentang server, plugin, atau project web sangat saya Welcome!
+      ⚡ Jangan sungkan — semua pertanyaan tentang server, plugin, project web dan lainnya sangat saya Welcome!
     </p>
   </section>
 </main>
@@ -821,7 +807,7 @@ a:focus-visible,button:focus-visible{outline:2px solid #a78bfa;outline-offset:3p
       </a>
     </div>
     <div class="footer-name">BAIHAQI LEVIANDRA HERMAWAN · WANDRA</div>
-    <div class="footer-copy">© 2026 <b>Wandra</b> — Dibuat dengan ☕ &amp; ⭐ di antara galaksi. All rights reserved.</div>
+    <div class="footer-copy">© 2026 <b>Wandra</b> — Dibuat dengan ☕ &amp; All rights reserved.</div>
   </div>
 </footer>
 
